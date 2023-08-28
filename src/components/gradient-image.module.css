@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.container img {
+  transition: transform 0.3s;
+}
+
+.container:hover img {
+  transform: scale(1.1);
+}
