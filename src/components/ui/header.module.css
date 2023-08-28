@@ -1,0 +1,27 @@
+.container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 56px;
+  backgroud-color: #fff;
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.container h1 {
+  font-size: 1.5rem;
+}
+
+.container .repository {
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.container .repository:hover {
+  color: var(--black-2);
+}
