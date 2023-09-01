@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+}
+
+.container::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transtion: opacity 0.3s easy, visibility 0.3s easy;
+}
+
+.container:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
