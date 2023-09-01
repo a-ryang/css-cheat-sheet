@@ -9,7 +9,12 @@ interface GradientImageProps {
   alt: string;
 }
 
-export function GradientImage({ src, height, width, alt }: GradientImageProps) {
+export default function GradientImage({
+  src,
+  height,
+  width,
+  alt,
+}: GradientImageProps) {
   return (
     <div className={styles.container}>
       <Image src={src} height={height} width={width} alt={alt} />

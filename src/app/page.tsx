@@ -1,7 +1,7 @@
-import { GradientImage } from "@/components/gradient-image";
-
 import styles from "./page.module.css";
 import Card from "@/components/card";
+import GradientImage from "@/components/gradient-image";
+import Tooltip from "@/components/tooltip";
 
 export default function Home() {
   return (
@@ -17,6 +17,16 @@ export default function Home() {
           <a
             className={styles.link}
             href="https://github.com/a-ryang/css-cheat-sheet/blob/main/src/components/gradient-image.module.css"
+            target="_blank">
+            code
+          </a>
+        </Card>
+
+        <Card title="Tooltip">
+          <Tooltip tooltip="hello world" />
+          <a
+            className={styles.link}
+            href="https://github.com/a-ryang/css-cheat-sheet/blob/main/src/components/tooltip.module.css"
             target="_blank">
             code
           </a>
