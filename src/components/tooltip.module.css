@@ -16,7 +16,7 @@
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  transtion: opacity 0.3s easy, visibility 0.3s easy;
+  transition: opacity 0.3s easy, visibility 0.3s easy;
 }
 
 .container:hover::before {
